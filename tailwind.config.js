@@ -11,6 +11,12 @@ module.exports = {
       },
       "dark-bg": "#1D242B",
     },
+    fontFamily: {
+      sfPro: ["Sf-Pro"],
+    },
+    fontWeight: {
+      b: 700,
+    },
     extend: {},
   },
   plugins: [],

@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  * {
+    @apply font-sfPro;
+  }
+  .container {
+    @apply max-w-[1116px] px-5 mx-auto;
+  }
+  @font-face {
+    font-family: "Sf-Pro";
+    src: url("assets/fonts/SFPRODISPLAYREGULAR.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Sf-Pro";
+    src: url("assets/fonts/SFPRODISPLAYBOLD.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  .mygrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    @apply gap-8 items-center justify-items-center;
+  }
+}
+@layer components {
+  .btn {
+    @apply flex items-center justify-center max-h-[46px] h-full px-8 py-3 bg-accent-500 text-base text-white rounded-xl hover:bg-white hover:text-accent-500 border-2 border-accent-500  border-solid hover:border-accent-500 hover:shadow-lg;
+  }
+}
