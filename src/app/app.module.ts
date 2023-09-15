@@ -6,6 +6,8 @@ import {
   remixTwitterFill,
   remixDribbbleFill,
   remixInstagramLine,
+  remixMenuLine,
+  remixAddLine,
 } from '@ng-icons/remixicon';
 import { bootstrapSend } from '@ng-icons/bootstrap-icons';
 
@@ -33,6 +35,8 @@ import { TestimonialComponent } from './testimonial/testimonial.component';
       remixDribbbleFill,
       remixInstagramLine,
       bootstrapSend,
+      remixMenuLine,
+      remixAddLine,
     }),
   ],
   providers: [],
